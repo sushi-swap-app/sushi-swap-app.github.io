@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://sushi-swap-app.github.io/sitemap.xml
